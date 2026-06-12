@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaffelösningar för Företag & Butik - Kaffemästaren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Kaffe<span>mästaren</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html" class="active">Kaffelösningar</a></li>
+                <li><a href="produkt-2.html">Barista & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Kaffelösningar för Företag, Butik & Hem</h1>
+        
+        <div class="content-image-container">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=1200&q=80" alt="Modern espressomaskin på ett kontor">
+        </div>
+
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto; text-align: center;">
+            Vi levererar helhetslösningar anpassade efter era behov. Från noggrant utvalda kaffebönor till installation och löpande service av högkvalitativa kaffemaskiner.
+        </p>
+
+        <!-- Framtida HubSpot / Analys-formulär -->
+        <div class="form-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center; color: #3d2514;">Få en skräddarsydd kaffelösning</h2>
+            
+            <form id="kaffelosning-form" action="thank-you.html" method="GET">
+                <div class="form-group">
+                    <label for="p1-name">Namn</label>
+                    <input type="text" id="p1-name" name="name" required placeholder="Ditt för- och efternamn">
+                </div>
+                <div class="form-group">
+                    <label for="p1-email">E-postadress</label>
+                    <input type="email" id="p1-email" name="email" required placeholder="namn@foretag.se">
+                </div>
+                <div class="form-group">
+                    <label for="p1-type">Typ av lösning</label>
+                    <select id="p1-type" name="solution_type">
+                        <option value="kontor">Arbetsplats / Kontor</option>
+                        <option value="butik">Butik / Cafe</option>
+                        <option value="hem">Hemmaanvändare</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="p1-message">Berätta kort om era behov (t.ex. antal personer)</label>
+                    <textarea id="p1-message" name="message" rows="4" placeholder="Vi är ca 25 personer på kontoret..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Skicka offertförfrågan</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaffemästaren AB | Lokalt i Sollentuna</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

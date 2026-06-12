@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista till Event & Mässor - Kaffemästaren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Kaffe<span>mästaren</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Kaffelösningar</a></li>
+                <li><a href="produkt-2.html" class="active">Barista & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Professionell Barista till Mässor & Företagsevent</h1>
+        
+        <div class="content-image-container">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80" alt="Barista som häller upp latte art på ett event">
+        </div>
+
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto; text-align: center;">
+            Sätt guldkant på ert nästa företagsevenemang. Vi levererar kompletta mobila kaffebarer inklusive certifierade baristor som skapar en professionell kaffeupplevelse på plats.
+        </p>
+
+        <div class="form-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center; color: #3d2514;">Kontrollera tillgänglighet för ditt event</h2>
+            
+            <form id="event-form" action="thank-you.html" method="GET">
+                <div class="form-group">
+                    <label for="p2-company">Företag / Organisation</label>
+                    <input type="text" id="p2-company" name="company" required placeholder="Företagsnamn AB">
+                </div>
+                <div class="form-group">
+                    <label for="p2-email">E-postadress</label>
+                    <input type="email" id="p2-email" name="email" required placeholder="kontakt@foretag.se">
+                </div>
+                <div class="form-group">
+                    <label for="p2-date">Datum för event</label>
+                    <input type="date" id="p2-date" name="event_date" required>
+                </div>
+                <div class="form-group">
+                    <label for="p2-guests">Beräknat antal gäster</label>
+                    <input type="number" id="p2-guests" name="guests" min="10" placeholder="t.ex. 100">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Se tillgänglighet</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaffemästaren AB | Leverans i hela Sverige</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

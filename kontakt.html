@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Kaffemästaren i Sollentuna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Kaffe<span>mästaren</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Kaffelösningar</a></li>
+                <li><a href="produkt-2.html">Barista & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Kontakta Oss</h1>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 3rem;">
+            <div>
+                <h3>Besök eller skriv till oss</h3>
+                <p style="margin-top: 1rem;">
+                    <strong>Kaffemästaren AB</strong><br>
+                    Turebergs allé 4<br>
+                    191 62 Sollentuna
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>E-post:</strong> info@kaffemastaren-exempel.se<br>
+                    <strong>Telefon:</strong> 08-123 45 67
+                </p>
+            </div>
+            <div class="content-image-container" style="margin-bottom: 0;">
+                <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=600&q=80" alt="Mysigt kaffe-showroom eller caféinteriör">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center; color: #3d2514;">Skicka ett meddelande</h2>
+            
+            <form id="contact-form" action="thank-you.html" method="GET">
+                <div class="form-group">
+                    <label for="contact-name">Namn</label>
+                    <input type="text" id="contact-name" name="name" required placeholder="Ditt namn">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">E-postadress</label>
+                    <input type="email" id="contact-email" name="email" required placeholder="namn@företag.se">
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">Meddelande</label>
+                    <textarea id="contact-msg" name="message" rows="5" required placeholder="Hur kan vi hjälpa dig?"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Skicka meddelande</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaffemästaren AB | Org.nr: 555555-5555</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

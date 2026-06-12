@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenumerera på vårt Nyhetsbrev - Kaffemästaren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Kaffe<span>mästaren</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Kaffelösningar</a></li>
+                <li><a href="produkt-2.html">Barista & Event</a></li>
+                <li><a href="nyhetsbrev.html" class="active">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Få Kaffekunskap & Exklusiva Erbjudanden</h1>
+        
+        <div class="content-image-container" style="max-height: 300px;">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80" alt="Nymalda kaffebönor i en sked">
+        </div>
+
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto; text-align: center;">
+            Håll dig uppdaterad med de senaste trenderna inom kaffevärlden, få tips från våra baristor och unika erbjudanden direkt till din inkorg en gång i månaden.
+        </p>
+
+        <div class="form-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center; color: #3d2514;">Prenumerera Nu</h2>
+            
+            <form id="newsletter-form" action="thank-you.html" method="GET">
+                <div class="form-group">
+                    <label for="news-email">E-postadress</label>
+                    <input type="email" id="news-email" name="email" required placeholder="din.mejl@domän.se">
+                </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" id="news-consent" name="consent" required style="width: auto;">
+                    <label for="news-consent" style="margin-bottom: 0; font-size: 0.85rem;">Jag godkänner att Kaffemästaren skickar mig marknadsföring.</label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Gå med i kaffeklubben</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaffemästaren AB | 20+ års erfarenhet</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
